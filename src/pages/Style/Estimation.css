@@ -1,0 +1,190 @@
+/* Estimation.css */
+
+.container {
+  max-width: 900px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.customerCard {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: #fefefe;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto;
+}
+
+.customerCard.selected {
+  background-color: #e6f0ff;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.sendButton {
+  background-color: #004aad;
+  color: white;
+}
+.sendButton:hover{
+    background-color: #0066eb;
+}
+.completedButton {
+  background-color: #28a745;
+  color: white;
+  margin-left: 10px;
+}
+.completedButton:hover{
+    background-color: #017f1e;
+}
+
+.cancelButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+.estimationCard {
+  background-color: #e9f1ff;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.formInput {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.itemsContainer {
+  margin-bottom: 20px;
+}
+
+.itemRow {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.itemInputName {
+  flex: 1;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.itemInputPrice {
+  width: 100px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.viewButton {
+  background-color: #FFD700;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.viewButton:hover {
+  background-color: #e5c303;
+}
+.iconButton {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 18px;
+}
+.tabHeader {
+  display: flex;
+  margin-bottom: 20px;
+}
+.tabHeader button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #94B4C1;
+  cursor: pointer;
+}
+.tabHeader button.activeTab {
+  background-color: #547792;
+  color: white;
+}
+.tabContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.card_p{
+  margin-bottom: 8px;
+}
+.card_h1{
+  margin-bottom: 25px;
+  background-color: #547792;
+  text-align: center;
+  padding: 8px;
+  color: #e9f1ff;
+  border-radius: 4px;
+}
+
+/* Add in Estimation.css */
+.deleteIcon {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  color: red;
+  background: #ff0000;
+  border-radius: 50%;
+  padding: 7px 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.customerCard {
+  position: relative; /* Add this if not already set */
+}

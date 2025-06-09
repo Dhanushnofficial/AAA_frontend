@@ -1,0 +1,167 @@
+/* DO NOT use or modify global form styles for this component */
+
+.material-notes-container {
+  padding: 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.material-notes-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Note Card */
+.material-note-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.material-note-card-buttons {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.material-note-edit-btn {
+  background-color: #fbbf24;
+  padding: 4px 12px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.material-note-delete-btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+form {
+  all: unset;
+  display: block;
+}
+
+/* Specific to modal form inputs only */
+.material-form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.material-form label {
+  font-weight: 500;
+  margin-top: 10px;
+  display: block;
+}
+
+.modal-item-group {
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.material-note-update-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.modal-cancel-btn {
+  background-color: #9ca3af;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.material-notes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.material-notes-table th, .material-notes-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.material-notes-table th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
+
+.material-note-edit-btn,
+.material-note-delete-btn {
+  margin-right: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.material-note-edit-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.material-note-delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.material-note-edit-btn:hover {
+  background-color: #45a049;
+}
+
+.material-note-delete-btn:hover {
+  background-color: #d32f2f;
+}
