@@ -9,7 +9,7 @@ const Login = ({ setToken }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:8000/login', { username, password });
+      const res = await axios.post('https://aaa-backend-m6hq.vercel.app/login', { username, password });
       setToken(res.data.token);
       localStorage.setItem('token', res.data.token);
     } catch (err) {
@@ -20,7 +20,7 @@ const Login = ({ setToken }) => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:8000/register', { username, password });
+      await axios.post('https://aaa-backend-m6hq.vercel.app/register', { username, password });
       alert('Registration successful! You can now log in.');
       setIsRegistering(false); // switch to login
       setUsername('');

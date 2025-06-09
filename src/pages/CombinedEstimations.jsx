@@ -12,7 +12,7 @@ function CombinedDataList() {
 
   const fetchCombinedData = async () => {
     try {
-      const res = await axios.get('http://localhost:8000/combined-data');
+      const res = await axios.get('https://aaa-backend-m6hq.vercel.app/combined-data');
       setData(res.data);
     } catch (err) {
       console.error('Failed to fetch combined data:', err);
@@ -50,7 +50,7 @@ function CombinedDataList() {
           : null,
       };
 
-      await axios.put(`http://localhost:8000/combined-data/${id}`, payload);
+      await axios.put(`https://aaa-backend-m6hq.vercel.app/combined-data/${id}`, payload);
       setEditingId(null);
       fetchCombinedData();
     } catch (err) {
@@ -61,7 +61,7 @@ function CombinedDataList() {
   const deleteEstimation = async (id) => {
     if (!window.confirm('Are you sure you want to delete this estimation?')) return;
     try {
-      await axios.delete(`http://localhost:8000/combined-data/${id}`);
+      await axios.delete(`https://aaa-backend-m6hq.vercel.app/combined-data/${id}`);
       fetchCombinedData();
     } catch (err) {
       console.error('Failed to delete estimation:', err);
